@@ -51,7 +51,9 @@ function generatePassword() {
     passwordUppercasePrompt === false &&
     passwordNumberPrompt === false
   ) {
-    window.alert("must include a charcter set to create password");
+    window.alert(
+      "Password must include at least 1 charcter set to generate password"
+    );
   }
   if (passwordSpecialPrompt) {
     for (let i = 0; i < 22; i++) {
