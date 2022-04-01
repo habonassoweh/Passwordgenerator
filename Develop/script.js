@@ -19,11 +19,11 @@ function generatePassword() {
     window.prompt(" How long would you like your password to be?")
   );
   if (passwordLengthPrompt < 8) {
-    window.alert("passowrd must be at least 8 characters long ");
+    window.alert("Password must be at least 8 characters long ");
     return null;
   }
   if (passwordLengthPrompt > 128) {
-    window.alert("passoword can not be greater than 128 charcters");
+    window.alert("Password can not be greater than 128 charcters");
     return null;
   }
   if (isNaN(passwordLengthPrompt)) {
