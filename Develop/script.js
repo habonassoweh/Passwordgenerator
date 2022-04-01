@@ -19,11 +19,11 @@ function generatePassword() {
     window.prompt(" How long would you like your password to be?")
   );
   if (passwordLengthPrompt < 8) {
-    window.alert("passowrd must be at least 8 characters long ");
+    window.alert("Password must be at least 8 characters long ");
     return null;
   }
   if (passwordLengthPrompt > 128) {
-    window.alert("passoword can not be greater than 128 charcters");
+    window.alert("Password can not be greater than 128 charcters");
     return null;
   }
   if (isNaN(passwordLengthPrompt)) {
@@ -51,7 +51,9 @@ function generatePassword() {
     passwordUppercasePrompt === false &&
     passwordNumberPrompt === false
   ) {
-    window.alert("must include a charcter set to create password");
+    window.alert(
+      "Password must include at least 1 charcter set to generate password"
+    );
   }
   if (passwordSpecialPrompt) {
     for (let i = 0; i < 22; i++) {
